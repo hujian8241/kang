@@ -1,0 +1,73 @@
+.container-fluid{
+    margin: 20px;
+    padding: 20px;
+    color: #7C7C7C;
+    border: 1px solid #7C7C7C;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.fz50{
+    font-size: 50px;
+}
+ul.meteo-infos{
+    list-style: none;
+    padding: 0;
+    display:inline-block;
+    width: 100%;
+}
+ul.meteo-infos li{
+    float: left;
+    padding: 0;
+    box-sizing: border-box;
+    margin-right: 4%;
+}
+ul.meteo-infos#meteo-week li{
+    transition: background-color 0.5s ease;
+    transition: color 0.5s ease;
+}
+ul.meteo-infos#meteo-week li:hover{
+    cursor: pointer;
+    background-color: graytext;
+    color: #fff;
+}
+.icon{
+    padding: 20px 0;
+    color: #000;
+}
+.title-today{
+    font-size: 20px;
+    display: block;
+}
+.title-degree{
+    font-size: 50px;
+    color: #000;
+}
+.degree{
+    font-size: 16px;
+    vertical-align: text-top;
+}
+@media (max-width: 768px) {
+    .container-fluid{
+        margin: 50px auto;
+        min-width: 300px;
+    }
+    ul.meteo-infos{
+        width: 75%;
+        margin: 0 auto;
+        display: block;
+    }
+    ul.meteo-infos li{
+        margin-right: 0;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #7C7C7C;
+    }
+    #infos-today{
+        text-align: center;
+    }
+    .temp-infos{
+        width: 75%;
+        margin: 0 auto;
+    }
+}
